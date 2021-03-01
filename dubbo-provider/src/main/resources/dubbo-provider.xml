@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:duubo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+<!--    1.定义应用的名称-->
+    <dubbo:application name="java_dubbo_provider"></dubbo:application>
+<!--    2.定义服务注册中心-->
+    <duubo:registry protocol="zookeeper" address="192.168.80.131:2181"></duubo:registry>
+<!--    3.用dubbo协议在20880端口暴露-->
+    <duubo:protocol port="20880"></duubo:protocol>
+<!--    4.定义我们的实现类-->
+    <bean id="userService" class="com.mxt.user.impl.UserServiceImpl"></bean>
+<!--    5.声明暴露的服务接口-->
+    <duubo:service interface="com.mxt.user.IUserService" ref="userService"></duubo:service>
+
+</beans>

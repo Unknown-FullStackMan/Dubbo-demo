@@ -1,0 +1,14 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:duubo="http://code.alibabatech.com/schema/dubbo"-->
+<!--       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">-->
+<!--    &lt;!&ndash;    1.定义应用的名称&ndash;&gt;-->
+<!--    <dubbo:application name="springboot_dubbo_consumer"></dubbo:application>-->
+<!--    &lt;!&ndash;    2.定义服务注册中心&ndash;&gt;-->
+<!--    <duubo:registry protocol="zookeeper" address="192.168.80.131:2181"></duubo:registry>-->
+<!--&lt;!&ndash;3.引用服务接口&ndash;&gt;-->
+<!--    <duubo:reference interface="com.mxt.user.IUserService" id="userService"></duubo:reference>-->
+
+
+<!--</beans>-->
